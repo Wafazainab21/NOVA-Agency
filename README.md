@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NOVA Creative Studio
 
-## Getting Started
+A modern, responsive digital agency website built with Next.js, React, and TypeScript.
 
-First, run the development server:
+## 🌟 Project Overview
+
+NOVA Creative Studio is a modern creative agency website designed to showcase digital services, creative projects, and provide an easy way for potential clients to get in touch.
+
+The website features a clean, premium dark interface with lime-green accents, smooth layouts, and a responsive design.
+
+## ✨ Features
+
+- **Hero Section:** Agency introduction with an engaging headline and call-to-action.
+- **About Section:** Introduction to NOVA Creative Studio.
+- **Services Section:** Highlights the agency's digital services.
+- **Portfolio Section:** Showcases selected creative projects.
+- **Our Process:** Explains the agency's workflow.
+- **Why NOVA:** Highlights the agency's strengths.
+- **Contact Form:** Collects visitor name, email, and project details.
+- **Email Integration:** Contact form submissions are delivered through Web3Forms.
+- **Responsive Design:** Adapted for desktop and mobile devices.
+- **SEO Metadata:** Includes page title, description, and keywords.
+
+## 🛠️ Technologies Used
+
+- Next.js 16
+- React
+- TypeScript
+- CSS
+- Tailwind CSS
+- Lucide React
+- Web3Forms
+
+## 📁 Project Structure
+
+```text
+nova-agency/
+├── public/
+├── src/
+│   ├── app/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── components/
+│       ├── Navbar.tsx
+│       ├── Hero.tsx
+│       ├── About and other sections
+│       ├── Services.tsx
+│       ├── Portfolio.tsx
+│       ├── Contact.tsx
+│       └── Footer.tsx
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd nova-agency
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Create a `.env.local` file in the root directory and add your Web3Forms access key:
+
+```env
+NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=YOUR_ACCESS_KEY
+```
+
+5. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📩 Contact Form
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The contact form uses Web3Forms to deliver submitted inquiries to the configured email address.
 
-## Learn More
+It includes:
+- Required field validation
+- Email format validation
+- Submission loading state
+- Success and error messages
 
-To learn more about Next.js, take a look at the following resources:
+A valid Web3Forms access key is required for email delivery.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔐 Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The `.env.local` file contains the Web3Forms access key.
 
-## Deploy on Vercel
+**Important:** Never commit your actual `.env.local` file or access key to GitHub.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📌 Assumptions & Additional Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The website represents a fictional digital creative agency named NOVA Creative Studio.
+- The contact form uses a third-party service instead of a custom backend.
+- The design focuses on a modern, minimal, and premium visual experience.
+- Additional sections have been included beyond the four core assignment requirements.
+
+## 👩‍💻 Author
+
+**Zainab**
+
+---
+
+Built with ❤️ using Next.js and React.
